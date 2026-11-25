@@ -1,66 +1,147 @@
-# ContractFlow — Enterprise CLM Functional Implementation Simulation
+# ContractFlow — Contract Lifecycle Management (CLM)
 
-**Portfolio case study | Fictional client: Apex Global Technologies**
+**A Functional Consulting Portfolio Project | Fictional Client: Apex Global Technologies**
 
-ContractFlow demonstrates how a Functional Consultant could approach a contract lifecycle management (CLM) implementation: discover business needs, translate them into functional requirements, design workflows and configuration, plan data migration, validate the solution through testing/UAT, and prepare deployment and handover.
+[**Live Demo**](https://contractflow-clm.vercel.app) · [**GitHub Repository**](https://github.com/Nisarga0104/ContractFlow-CLM)
 
-> **Important:** ContractFlow is an independently created educational simulation. It is not Icertis software, is not connected to the Icertis platform, and does not demonstrate hands-on Icertis configuration. It is not legal advice. All client names, contract records, values, workflow rules and sample metrics are fictional.
+---
 
-## Live demo
+## 1. Project Overview
 
-Deploy this repository to Vercel using the steps in `docs/08-deployment-and-handover.md`. The app is static HTML/CSS/JavaScript and requires no build command.
+ContractFlow is an independently developed Contract Lifecycle Management (CLM) implementation simulation designed to demonstrate how a Functional Consultant approaches enterprise contract management challenges.
 
-## Features
+The project models a fictional multinational organization's contract lifecycle, from contract intake and approval routing to obligation tracking, renewals and portfolio reporting.
 
-- Executive dashboard and contract portfolio summary
-- Searchable contract repository
-- Create and submit a contract
-- Simulated approval routing: manager + legal; finance added for values above INR 10,00,000
-- Approval decision simulation
-- Obligation and renewal tracking
-- Contract intelligence review queue with transparent demo limitations
-- Portfolio reports and CSV export
-- Browser-local persistence using `localStorage`
+It combines functional consulting documentation with a working browser-based prototype.
 
-## Run locally
+## 2. Business Problem
 
-Open `index.html` in a browser, or serve the folder with VS Code Live Server. No backend, API key, package installation or database is required.
+Organizations managing contracts through disconnected spreadsheets, email approvals and manual tracking can face:
 
-## Repository map
+- Delayed contract approval cycles.
+- Limited visibility into contract status and ownership.
+- Inconsistent approval processes.
+- Missed renewal dates and contractual obligations.
+- Difficulty identifying contractual risks.
+- Fragmented contract reporting.
 
-- `index.html`, `styles.css`, `app.js`: deployable demo application
-- `docs/`: consulting implementation artifacts
-- `data/`: fictional sample records and migration template
-- `tests/`: test scenarios and acceptance criteria
-- `assets/`: reserved for process diagrams/screenshots added by the author
+**Proposed solution:** A centralized CLM workflow simulation that demonstrates structured contract intake, approval routing, obligation monitoring and management reporting.
 
-## Demo workflow
+## 3. Key Features
 
-1. Open Overview and inspect the sample portfolio.
-2. Open Contracts and create a contract.
-3. Enter a contract value above INR 10,00,000.
-4. Open Approvals and observe the simulated approval tasks.
-5. Approve or reject tasks to see status changes.
-6. Open Obligations & renewals and complete an obligation.
-7. Open Reports and export the contracts CSV.
+| Module | Functionality |
+|---|---|
+| Executive Dashboard | Contract portfolio KPIs and activity overview |
+| Contract Repository | Contract listing, search and detail views |
+| Contract Creation | Structured contract intake and submission |
+| Approval Management | Simulated Manager, Legal and Finance approval workflows |
+| Obligations & Renewals | Obligation ownership, due dates and completion tracking |
+| Contract Intelligence | Rule-based risk review queue and checklist |
+| Reports | Contract statistics and CSV export |
 
-## Known limitations
+### Approval Workflow Logic
 
-This is a front-end portfolio simulation, not a production CLM application.
+The prototype demonstrates value-based approval routing:
 
-- Data is stored in the current browser's local storage; it is not shared across users or devices.
-- No authentication, authorization enforcement, backend API, database, audit-grade event log, encryption-at-rest, document repository or e-signature integration is implemented.
-- Approval actions are simulated in the browser and are not legally binding.
-- The intelligence module is rule-/metadata-based demonstration content, not an AI model or contract parser.
-- Sample dates and figures are illustrative.
-- Production implementation would require security architecture, privacy/legal review, identity integration, backend services, database controls, audit logging, monitoring, backups, disaster recovery and client-specific configuration.
+- Manager approval: required.
+- Legal review: required.
+- Finance approval: additionally required for contract values above ₹10,00,000.
 
-## Consulting artifacts
+## 4. Technology Stack
 
-Start with `docs/00-project-charter.md`, then read the BRD, stakeholder matrix, process design, FRD, configuration workbook (CSV), migration mapping, test scenarios, UAT and deployment plan. See `docs/09-interview-walkthrough.md` for a suggested interview narrative.
+- HTML5
+- CSS3
+- JavaScript
+- Browser Local Storage
+- Git and GitHub
+- Vercel
 
-## Suggested portfolio description
+The application is a static front-end prototype and does not require a backend server or database.
 
-**ContractFlow — Enterprise CLM Functional Implementation Simulation:** Designed an end-to-end CLM implementation case study for a fictional multinational enterprise. Produced business and functional requirements, stakeholder analysis, AS-IS/TO-BE process design, approval workflow specifications, configuration and data-mapping matrices, test scenarios, UAT and deployment documentation. Built a browser-based prototype demonstrating contract intake, approval routing, obligation tracking and portfolio reporting.
+## 5. Functional Consulting Deliverables
 
-Be transparent that this was a self-directed simulation and distinguish the prototype from actual Icertis product configuration.
+The repository includes implementation documentation covering:
+
+- Project charter and scope definition.
+- Business Requirements Document (BRD).
+- Stakeholder analysis.
+- AS-IS and TO-BE process design.
+- Functional Requirements Document (FRD).
+- Workflow and configuration design.
+- Data migration mapping.
+- Functional test scenarios.
+- User Acceptance Testing (UAT).
+- Deployment and handover planning.
+- Interview walkthrough.
+
+See the `docs/` folder for the detailed consulting artifacts.
+
+## 6. Demo Walkthrough
+
+1. Open the executive dashboard.
+2. Navigate to the contract repository.
+3. Create and submit a new contract.
+4. Observe the approval tasks generated by the workflow rules.
+5. Approve or reject an approval task.
+6. Complete an obligation.
+7. Review the contract intelligence queue.
+8. Open reports and export contract records as CSV.
+
+## 7. Project Structure
+
+```text
+ContractFlow-CLM/
+│
+├── index.html
+├── styles.css
+├── app.js
+├── vercel.json
+├── README.md
+│
+├── assets/
+├── data/
+├── docs/
+├── tests/
+│
+└── .gitignore
+```
+
+## 8. Known Limitations
+
+This project is an educational Functional Consulting simulation, not a production CLM platform.
+
+- Contract records are stored in browser Local Storage.
+- Data is not shared across users or devices.
+- Authentication and role-based authorization are not implemented.
+- No backend API or centralized database is connected.
+- Approval actions are simulated and are not legally binding.
+- Contract Intelligence uses demonstration rules and metadata, not a trained AI model or automated contract parser.
+- The review checklist is currently illustrative rather than a fully interactive review workflow.
+- Sample contracts, values, client names and metrics are fictional.
+
+A production implementation would require backend services, database integration, identity and access management, audit logging, security controls, document management and integration with enterprise systems.
+
+## 9. Business Value Demonstrated
+
+This project demonstrates the ability to:
+
+- Translate business problems into functional requirements.
+- Design enterprise workflow logic.
+- Define approval matrices and business rules.
+- Structure contract lifecycle processes.
+- Prepare functional testing and UAT scenarios.
+- Document configuration and migration requirements.
+- Communicate implementation scope and limitations.
+
+## 10. Important Disclaimer
+
+ContractFlow is an independently created educational simulation. It is not Icertis software, is not connected to the Icertis platform and does not demonstrate hands-on Icertis configuration.
+
+All client names, contract records, workflow rules and sample metrics are fictional. This project is not legal advice.
+
+---
+
+**Project:** ContractFlow — CLM Functional Implementation Simulation  
+**Category:** Functional Consulting | Business Analysis | Contract Lifecycle Management  
+**Deployment:** Vercel  
+**Source Code:** GitHub
