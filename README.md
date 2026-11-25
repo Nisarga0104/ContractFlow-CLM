@@ -26,6 +26,20 @@ Organizations managing contracts through disconnected spreadsheets, email approv
 - Fragmented contract reporting.
 
 **Proposed solution:** A centralized CLM workflow simulation that demonstrates structured contract intake, approval routing, obligation monitoring and management reporting.
+## Application Screenshots
+
+### Executive Dashboard
+![ContractFlow Dashboard](assets/screenshots/dashboard.png)
+
+### Contract Repository
+![Contract Repository](assets/screenshots/contracts.png)
+
+### Approval Workflow
+![Approval Workflow](assets/screenshots/approvals.png)
+
+### Obligations & Renewals
+![Obligations and Renewals](assets/screenshots/obligations.png)
+
 
 ## 3. Key Features
 
