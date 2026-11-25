@@ -1,0 +1,15 @@
+field_name,data_type,mandatory,description,validation
+contract_id,string,Yes,Unique target identifier,Unique and non-null
+title,string,Yes,Contract display title,3 to 150 characters
+counterparty,string,Yes,Legal entity on other side,Must match approved party master
+type,controlled list,Yes,Agreement classification,Must be approved contract type
+owner,string,Yes,Accountable business owner,Must map to active user
+department,controlled list,Yes,Owning business unit,Must map to approved org structure
+value,decimal,Yes,Total committed contract value,Non-negative and currency explicit
+currency,string,Yes,ISO currency code,Must be valid currency
+effective_date,date,Yes,Contract start/effective date,Valid ISO date
+expiry_date,date,Conditional,Contract end date,Not earlier than effective date
+notice_period,integer + unit,Conditional,Notice required before expiry,Verify against executed contract
+status,controlled list,Yes,Lifecycle status,Must map to approved status
+stage,controlled list,Conditional,Current workflow stage,Must match workflow state
+risk,controlled list,Conditional,Reviewed risk classification,Human-reviewed only

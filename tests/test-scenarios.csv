@@ -1,0 +1,17 @@
+test_id,requirement_id,scenario,preconditions,test_steps,expected_result,priority,execution_status
+TC-001,FR-01,Create valid contract,User opens intake form,"Enter all mandatory fields and submit",Unique contract record created,High,Not Run
+TC-002,FR-02,Expiry earlier than effective date,User opens intake form,"Set expiry before effective date and submit",Submission blocked with validation message,High,Not Run
+TC-003,FR-04,Search by counterparty,Seed data loaded,"Search Northstar Cloud",Matching contract appears,Medium,Not Run
+TC-004,FR-05,Filter by status,Seed data loaded,"Select Active status",Only active records appear,Medium,Not Run
+TC-005,FR-06,Manager approval task,Valid request submitted,"Open approval workbench",Manager task is created,High,Not Run
+TC-006,FR-07,Legal review task,Valid request submitted,"Open approval workbench",Legal task is created,High,Not Run
+TC-007,FR-08,Value above threshold,Contract value INR 10,00,001,"Submit and inspect approval tasks",Finance approval is added,High,Not Run
+TC-008,FR-08,Value equal to threshold,Contract value INR 10,00,000,"Submit and inspect approval tasks",Finance approval is not added under strict greater-than rule,High,Not Run
+TC-009,FR-08,Value below threshold,Contract value INR 9,99,999,"Submit and inspect approval tasks",Finance approval is not added,High,Not Run
+TC-010,FR-09,All approvals complete,All required approval tasks pending,"Approve each required task",Contract transitions to Active in demo,High,Not Run
+TC-011,FR-09,Approval rejected,At least one approval pending,"Reject one task",Contract returns to Draft in demo,High,Not Run
+TC-012,FR-11,Complete obligation,Obligation exists,"Mark obligation complete",Status becomes Completed,Medium,Not Run
+TC-013,FR-12,Report metrics,Seed records loaded,"Open Reports",Metrics reflect current demo data,Medium,Not Run
+TC-014,FR-13,Export CSV,Contract records exist,"Click Export contracts CSV",CSV file downloads with expected columns,Medium,Not Run
+TC-015,FR-15,Audit history,Production audit capability designed,"Review production audit design",Create/update/approval events traceable; not implemented in demo,High,Not Run
+TC-016,FR-14,Unauthorized record access,Role test users provisioned,"Attempt access to restricted record",Access denied and event logged; not implemented in demo,High,Not Run

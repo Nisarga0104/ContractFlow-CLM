@@ -1,0 +1,2 @@
+defect_id,summary,environment,severity,steps_to_reproduce,expected_result,actual_result,owner,status,fix_version,retest_result
+DEF-001,Example placeholder defect,Test environment,Sev 3,"Replace with reproducible steps","Expected behavior","Observed behavior","Assigned owner","Open","TBD","Not retested"

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ContractFlow enterprise contract lifecycle management implementation simulation">
+<title>ContractFlow | CLM Workspace</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">C</div><div><b>ContractFlow</b><small>CLM WORKSPACE</small></div></div>
+    <div class="workspace-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-view="overview"><span>▦</span> Overview</button>
+      <button class="nav-item" data-view="contracts"><span>▤</span> Contracts</button>
+      <button class="nav-item" data-view="approvals"><span>✓</span> Approvals <i id="approvalCount">0</i></button>
+      <button class="nav-item" data-view="obligations"><span>◷</span> Obligations & renewals</button>
+      <button class="nav-item" data-view="intelligence"><span>✧</span> Contract intelligence</button>
+      <button class="nav-item" data-view="reports"><span>▥</span> Reports</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="client-chip"><div class="client-avatar">AG</div><div><b>Apex Global</b><small>Demo tenant · Admin</small></div></div><small class="version">PORTFOLIO SIMULATION · v1.0</small></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow">APEX GLOBAL TECHNOLOGIES</div><h1 id="pageTitle">Overview</h1></div><div class="top-actions"><span class="env-pill"><span></span> DEMO ENVIRONMENT</span><button class="button primary" id="newContractBtn">＋ New contract</button></div></header>
+    <section id="view" class="content"></section>
+    <footer>ContractFlow · Fictional enterprise implementation case study · Not affiliated with Icertis</footer>
+  </main>
+</div>
+<div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal" role="dialog" aria-modal="true"><div class="modal-head"><div><div class="eyebrow">CONTRACT INTAKE</div><h2>Create contract</h2></div><button class="icon-btn" id="closeModal" aria-label="Close">×</button></div>
+<form id="contractForm">
+<div class="form-grid">
+<label>Contract title<input name="title" required placeholder="e.g. Cloud services agreement"></label>
+<label>Counterparty<input name="counterparty" required placeholder="Company name"></label>
+<label>Contract type<select name="type"><option>Vendor Agreement</option><option>Customer Agreement</option><option>NDA</option><option>Employment Agreement</option><option>Statement of Work</option></select></label>
+<label>Business owner<input name="owner" required placeholder="e.g. Priya Shah"></label>
+<label>Contract value (INR)<input name="value" type="number" min="0" required placeholder="1500000"></label>
+<label>Effective date<input name="effective" type="date" required></label>
+<label>Expiry date<input name="expiry" type="date" required></label>
+<label>Department<select name="department"><option>Procurement</option><option>Legal</option><option>Finance</option><option>Sales</option><option>Human Resources</option><option>Technology</option></select></label>
+</div><div class="form-note">Demo routing rule: contracts above ₹10,00,000 require Finance approval in addition to manager and Legal review.</div>
+<div class="modal-actions"><button type="button" class="button secondary" id="cancelModal">Cancel</button><button class="button primary" type="submit">Create & submit</button></div>
+</form></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>

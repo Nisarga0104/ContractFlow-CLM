@@ -1,0 +1,9 @@
+contract_id,title,counterparty,type,owner,department,value,currency,effective_date,expiry_date,status,stage,risk
+CF-2026-001,Enterprise Cloud Hosting Agreement,Northstar Cloud Ltd.,Vendor Agreement,Priya Shah,Technology,18500000,INR,2026-02-01,2027-01-31,In Review,Finance Approval,Medium
+CF-2026-002,Managed Security Services,BluePeak Cybersecurity,Vendor Agreement,Rahul Mehta,Technology,8200000,INR,2026-03-15,2027-03-14,Pending,Legal Review,High
+CF-2026-003,Strategic Reseller Agreement,Vertex Distribution GmbH,Customer Agreement,Ananya Rao,Sales,42000000,INR,2026-01-01,2026-12-31,Active,Executed,Low
+CF-2026-004,Mutual Non-Disclosure Agreement,Summit Analytics Inc.,NDA,Karan Desai,Legal,0,INR,2026-09-01,2027-08-31,Active,Executed,Low
+CF-2026-005,Professional Services Statement of Work,Cedar Consulting,Statement of Work,Meera Iyer,Procurement,950000,INR,2026-04-01,2026-11-30,Expiring,Executed,Medium
+CF-2026-006,Office Facilities Services Agreement,Metro Facilities Group,Vendor Agreement,Dev Kulkarni,Procurement,2400000,INR,2025-12-01,2026-11-30,Expiring,Executed,Low
+CF-2026-007,Regional Marketing Services,Brightline Media,Vendor Agreement,Sana Khan,Sales,3600000,INR,2026-05-01,2027-04-30,Pending,Manager Approval,Medium
+CF-2026-008,Employee Confidentiality Agreement,Internal HR,Employment Agreement,Neha Joshi,Human Resources,0,INR,2026-07-01,2028-06-30,Active,Executed,Low

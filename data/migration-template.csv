@@ -1,0 +1,2 @@
+legacy_reference,agreement_name,party_name,agreement_category,department_name,contract_owner,total_amount,currency,start_date,end_date,notice_period,legacy_status,document_location,exception_reason,target_contract_id
+LEG-0001,Example agreement,Example Counterparty,Vendor Agreement,Procurement,Owner Name,250000,INR,2026-01-01,2026-12-31,90 days,Active,/secure/source/path,,CF-NEW-0001
