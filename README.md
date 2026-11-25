@@ -4,6 +4,7 @@
 
 [**Live Demo**](https://contractflow-clm.vercel.app) · [**GitHub Repository**](https://github.com/Nisarga0104/ContractFlow-CLM)
 
+📘 **[Functional Consultant Case Study](docs/functional_consultant_case_study.md)**
 ---
 
 ## 1. Project Overview
