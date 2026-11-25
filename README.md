@@ -38,7 +38,7 @@ Organizations managing contracts through disconnected spreadsheets, email approv
 ![Approval Workflow](assets/screenshots/approvals.png)
 
 ### Obligations & Renewals
-![Obligations and Renewals](assets/screenshots/obligations.png)
+![Obligations and Renewals](assets/screenshots/reports.png)
 
 
 ## 3. Key Features
